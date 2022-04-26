@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Lazy Loading</title>
+    <link rel="icon" type="image/x-icon" href="./Fox.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="intro">
+        <a href="https://github.com/TomAtomicDev/fox-lazyloading.git"><h3>Made by TomAtomic.dev</h3></a>
+        <h1>Foxes are just Amazing!</h1>
+        <p> Press the button to load random pictures of beautiful foxes. I've built this as a personal project and to keep in mind how elegant and cute are these creatures. </p>
+        <p> I mainly wanted to practice my DOM manipulation skills with pure Javascript to implement an advanced technique called 'Lazy Loading'. This means that you can add more pictures but they will no load until you scroll down and show in your screen.</p>
+        <p>If you are in a laptop, I recommend to open your Browser Inspector with <kbd>F12</kbd> and go to Console to check the log that illustrates this effect.
+        </p>
+
+    </div>
+    <div class="buttons-container">
+        <button id="mybutton"> Add a Fox </button>
+        <button id="mybutton-2"> Clear </button>
+    </div>
+
+
+    <div id="root" class="main-grid"></div>
+    <footer>
+        <p>Pictures from: <a href="https://randomfox.ca">www.randomfox.ca</a> </p>
+    </footer>
+    <script>
+        let addedCounter = 0;
+        let loadedCounter = 0;
+    
+        const printCounters = () => {
+        console.log(`⚪ You have added: ${addedCounter} images`);
+        console.log(`🟣 You have loaded ${loadedCounter} images`);
+        console.log("---------------------------------------");
+        }
+    </script>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
